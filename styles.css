@@ -57,6 +57,7 @@ h1 {
 .buttons {
   position: relative;
   height: 70px;
+  width: 100%;
   margin: 10px 0 6px;
 }
 
@@ -75,16 +76,19 @@ h1 {
 .btn:active { transform: scale(0.98); }
 
 .yes {
+  position: absolute;
+  left: 22%;      /* <-- tweak this */
+  top: 0;
   background: #ff3b7a;
   color: white;
 }
 
 .no {
+  position: absolute;
+  right: 22%;    
+  top: 0;
   background: #f1f1f1;
   color: #333;
-  position: absolute;
-  right: 10%;
-  top: 0;
 }
 
 .hint {
@@ -130,6 +134,7 @@ h1 {
 @media (min-width: 700px){
   .gif-grid{ grid-template-columns: 1fr 1fr; }
 }
+
 
 
 
