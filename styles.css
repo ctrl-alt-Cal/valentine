@@ -20,8 +20,8 @@ body {
 .card {
   position: relative;          
   overflow: hidden;           
-  width: min(780px, 92vw);   
-  height: min(1200px, 42vh);    
+  width: min(720px, 92vw);   
+  height: min(1500px, 42vh);    
   display: grid;
   place-items: center;
   gap: 10px;
@@ -36,7 +36,7 @@ body {
 
 .stitch{
   position: absolute;
-  width: 130px;      
+  width: 180px;      
   height: auto;
   pointer-events: none;
   opacity: 0.98;
@@ -77,7 +77,7 @@ h1 {
 
 .yes {
   position: absolute;
-  left: 16%;      /* <-- tweak this */
+  left: 10%;      /* <-- tweak this */
   top: 0;
   background: #ff3b7a;
   color: white;
@@ -85,7 +85,7 @@ h1 {
 
 .no {
   position: absolute;
-  right: 16%;    
+  right: 10%;    
   top: 0;
   background: #f1f1f1;
   color: #333;
@@ -134,6 +134,7 @@ h1 {
 @media (min-width: 700px){
   .gif-grid{ grid-template-columns: 1fr 1fr; }
 }
+
 
 
 
