@@ -20,8 +20,8 @@ body {
 .card {
   position: relative;          
   overflow: hidden;           
-  width: min(880px, 92vw);   
-  height: min(300px, 42vh);    
+  width: min(820px, 92vw);   
+  height: min(800px, 42vh);    
   display: grid;
   place-items: center;
   gap: 10px;
@@ -116,4 +116,5 @@ h1 {
 @media (min-width: 700px){
   .gif-grid{ grid-template-columns: 1fr 1fr; }
 }
+
 
