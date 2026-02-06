@@ -34,6 +34,20 @@ body {
   box-shadow: 0 12px 40px rgba(0,0,0,0.22);
 }
 
+.stitch{
+  position: absolute;
+  width: 130px;      
+  height: auto;
+  pointer-events: none;
+  opacity: 0.98;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.22));
+}
+
+.stitch.tl{ top: -18px; left: -18px; }
+.stitch.tr{ top: -18px; right: -18px; transform: scaleX(-1); }
+.stitch.bl{ bottom: -18px; left: -18px; transform: scaleY(-1); }
+.stitch.br{ bottom: -18px; right: -18px; transform: scale(-1, -1); }
+
 h1 {
   margin: 0 0 18px;
   font-size: 28px;
@@ -116,5 +130,6 @@ h1 {
 @media (min-width: 700px){
   .gif-grid{ grid-template-columns: 1fr 1fr; }
 }
+
 
 
