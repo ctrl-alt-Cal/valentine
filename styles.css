@@ -21,9 +21,10 @@ body {
   position: relative;
   overflow: hidden;
 
-  width: min(900px, 94vw);
-  min-height: 420px;
-  padding: 44px 52px;
+  /* Fit inside the white frame: narrower + taller */
+  width: min(740px, 86vw);
+  min-height: 520px;
+  padding: 52px 44px;
 
   background: rgba(255,255,255,0.92);
   backdrop-filter: blur(6px);
@@ -35,22 +36,24 @@ body {
   align-items: center;
   justify-content: center;
   gap: 22px;
+
+  transform: translateY(-10px);
 }
 
 /* Stitch corner GIFs */
 .stitch{
   position: absolute;
-  width: 150px;      
+  width: 220px;  
   height: auto;
   pointer-events: none;
   opacity: 0.98;
   filter: drop-shadow(0 8px 10px rgba(0,0,0,0.22));
 }
 
-.stitch.tl{ top: -18px; left: -18px; }
-.stitch.tr{ top: -18px; right: -18px; transform: scaleX(-1); }
-.stitch.bl{ bottom: -18px; left: -18px; transform: scaleY(-1); }
-.stitch.br{ bottom: -18px; right: -18px; transform: scale(-1, -1); }
+.stitch.tl{ top: -26px; left: -26px; }
+.stitch.tr{ top: -26px; right: -26px; transform: scaleX(-1); }
+.stitch.bl{ bottom: -26px; left: -26px; transform: scaleY(-1); }
+.stitch.br{ bottom: -26px; right: -26px; transform: scale(-1, -1); }
 
 /* Question */
 h1 {
@@ -158,3 +161,4 @@ h1 {
   .yes { left: 34%; }
   .no  { right: 34%; }
 }
+
