@@ -21,7 +21,7 @@ body {
   position: relative;          
   overflow: hidden;           
   width: min(720px, 92vw);   
-  height: min(1500px, 42vh);    
+  height: min(3500px, 42vh);    
   display: grid;
   place-items: center;
   gap: 10px;
@@ -36,17 +36,17 @@ body {
 
 .stitch{
   position: absolute;
-  width: 180px;      
+  width: 200px;      
   height: auto;
   pointer-events: none;
   opacity: 0.98;
   filter: drop-shadow(0 8px 10px rgba(0,0,0,0.22));
 }
 
-.stitch.tl{ top: -24px; left: -24px; }
-.stitch.tr{ top: -24px; right: -24px; transform: scaleX(-1); }
-.stitch.bl{ bottom: -24px; left: -24px; transform: scaleY(-1); }
-.stitch.br{ bottom: -24px; right: -24px; transform: scale(-1, -1); }
+.stitch.tl{ top: -18px; left: -18px; }
+.stitch.tr{ top: -18px; right: -18px; transform: scaleX(-1); }
+.stitch.bl{ bottom: -18px; left: -18px; transform: scaleY(-1); }
+.stitch.br{ bottom: -18px; right: -18px; transform: scale(-1, -1); }
 
 h1 {
   margin: 0 0 18px;
@@ -134,6 +134,7 @@ h1 {
 @media (min-width: 700px){
   .gif-grid{ grid-template-columns: 1fr 1fr; }
 }
+
 
 
 
