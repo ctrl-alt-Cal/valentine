@@ -84,7 +84,7 @@ h1 {
 
 .btn:active { transform: scale(0.98); }
 
-.yes {
+.card .yes {
   position: absolute;
   left: 32%;
   top: 0;
@@ -92,12 +92,17 @@ h1 {
   color: white;
 }
 
-.no {
+.card .no {
   position: absolute;
   right: 32%;
   top: 0;
   background: #f1f1f1;
   color: #333;
+}
+
+.modal .yes {
+  position: static;
+  margin-top: 12px;
 }
 
 .hint {
@@ -161,9 +166,10 @@ h1 {
     width: 120px;
   }
 
-  .yes { left: 34%; }
-  .no  { right: 34%; }
+.card .yes { left: 34%; }
+.card .no  { right: 34%; }
 }
+
 
 
 
