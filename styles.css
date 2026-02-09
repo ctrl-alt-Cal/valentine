@@ -21,8 +21,8 @@ body {
   position: relative;
   overflow: hidden;
 
-  width: min(770px, 88vw);
-  min-height: 570px;
+  width: min(740px, 84vw);
+  min-height: 620px;
   padding: 52px 44px;
 
   background: rgba(255,255,255,0.92);
@@ -86,7 +86,7 @@ h1 {
 
 .yes {
   position: absolute;
-  left: 38%;
+  left: 32%;
   top: 0;
   background: #ff3b7a;
   color: white;
@@ -94,7 +94,7 @@ h1 {
 
 .no {
   position: absolute;
-  right: 38%;
+  right: 32%;
   top: 0;
   background: #f1f1f1;
   color: #333;
@@ -160,6 +160,7 @@ h1 {
   .yes { left: 34%; }
   .no  { right: 34%; }
 }
+
 
 
 
