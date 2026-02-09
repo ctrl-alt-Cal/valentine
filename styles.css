@@ -164,6 +164,21 @@ h1 {
     padding: 34px 22px;
   }
 
+@media (max-width: 520px){
+  .buttons{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 18px;
+  }
+
+  .card .yes,
+  .card .no{
+    position: static;
+  }
+}
+  
   h1{
     font-size: 30px;
   }
@@ -179,6 +194,7 @@ h1 {
 .modal .yes:hover {
   transform: scale(1.05);
 }
+
 
 
 
