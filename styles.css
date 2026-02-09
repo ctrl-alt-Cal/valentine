@@ -124,13 +124,17 @@ h1 {
   padding: 20px 16px;
   text-align: center;
   box-shadow: 0 18px 55px rgba(0,0,0,0.28);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gif-grid{
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
-  margin: 12px 0 14px;
+  margin: 12px 0 18px;
 }
 
 .gif-grid img{
@@ -160,6 +164,7 @@ h1 {
   .yes { left: 34%; }
   .no  { right: 34%; }
 }
+
 
 
 
