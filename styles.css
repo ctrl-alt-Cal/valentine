@@ -161,6 +161,9 @@ h1 {
     width: 94vw;
     min-height: 520px;
     padding: 28px 18px;
+
+    margin: 0 auto;
+    transform: translateY(-10px);
   }
 
   h1{
@@ -190,16 +193,12 @@ h1 {
     right: 18%;
     top: 40px;
   }
-
-  .card,
-  .modal-content{
-    transform: translateX(-6px);
-  }
 }
 
 .modal .yes:hover {
   transform: scale(1.05);
 }
+
 
 
 
