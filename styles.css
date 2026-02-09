@@ -36,7 +36,7 @@ body {
   justify-content: center;
   gap: 22px;
 
-  transform: translateY(-10px);
+  /* ✅ REMOVED transform (was causing mobile misalignment) */
 }
 
 /* Stitch corner GIFs */
@@ -163,7 +163,7 @@ h1 {
     padding: 28px 18px;
 
     margin: 0 auto;
-    transform: translateY(-10px);
+    transform: none; /* ✅ important: prevent right-shift on mobile */
   }
 
   h1{
@@ -198,12 +198,3 @@ h1 {
 .modal .yes:hover {
   transform: scale(1.05);
 }
-
-
-
-
-
-
-
-
-
