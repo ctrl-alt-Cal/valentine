@@ -190,11 +190,17 @@ h1 {
     right: 18%;
     top: 40px;
   }
+
+  .card,
+  .modal-content{
+    transform: translateX(-6px);
+  }
 }
 
 .modal .yes:hover {
   transform: scale(1.05);
 }
+
 
 
 
