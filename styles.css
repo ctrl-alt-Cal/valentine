@@ -102,7 +102,13 @@ h1 {
 
 .modal .yes {
   position: static;
-  margin-top: 12px;
+  margin-top: 16px;
+
+  background: #ff3b7a;
+  color: white;
+  box-shadow: 0 12px 22px rgba(255, 59, 122, 0.35);
+  padding: 14px 28px;
+  font-size: 16px;
 }
 
 .hint {
@@ -170,6 +176,9 @@ h1 {
 .card .no  { right: 34%; }
 }
 
+.modal .yes:hover {
+  transform: scale(1.05);
+}
 
 
 
