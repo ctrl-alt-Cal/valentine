@@ -62,11 +62,10 @@ h1 {
   line-height: 1.2;
 }
 
-/* Buttons row */
 .buttons {
   position: relative;
   width: 100%;
-  height: 60px;
+  height: 120px;
   margin: 18px 0 0;
 }
 
@@ -159,41 +158,44 @@ h1 {
 
 @media (max-width: 520px){
   .card{
-    width: min(94vw, 900px);
-    min-height: 380px;
-    padding: 34px 22px;
+    width: 94vw;
+    min-height: 520px;
+    padding: 28px 18px;
   }
 
-@media (max-width: 520px){
-  .buttons{
-    height: auto;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 18px;
-  }
-
-  .card .yes,
-  .card .no{
-    position: static;
-  }
-}
-  
   h1{
     font-size: 30px;
+    text-align: center;
   }
 
   .stitch{
-    width: 120px;
+    width: 140px;
   }
 
-.card .yes { left: 34%; }
-.card .no  { right: 34%; }
+  .buttons{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    margin: 18px 0 0;
+  }
+
+  .card .yes{
+    position: absolute;
+    left: 18%;
+    top: 40px;
+  }
+
+  .card .no{
+    position: absolute;
+    right: 18%;
+    top: 40px;
+  }
 }
 
 .modal .yes:hover {
   transform: scale(1.05);
 }
+
 
 
 
