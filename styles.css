@@ -1,5 +1,7 @@
 * { box-sizing: border-box; }
 
+html, body { overflow-x: hidden; }
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -36,7 +38,8 @@ body {
   justify-content: center;
   gap: 22px;
 
-  /* ✅ REMOVED transform (was causing mobile misalignment) */
+  margin: 0 auto;
+  justify-self: center;
 }
 
 /* Stitch corner GIFs */
@@ -138,6 +141,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  justify-self: center;
 }
 
 .gif-grid{
@@ -158,11 +163,13 @@ h1 {
 
 @media (max-width: 520px){
   .card{
+    position: relative;
     width: 94vw;
     min-height: 520px;
     padding: 28px 18px;
 
     margin: 0 auto;
+    left: 0;
     transform: none; /* ✅ important: prevent right-shift on mobile */
   }
 
@@ -198,3 +205,4 @@ h1 {
 .modal .yes:hover {
   transform: scale(1.05);
 }
+
