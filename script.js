@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+  document.getElementById("question").style.visibility = "visible";
+});
+
 const yesBtn   = document.getElementById("yesBtn");
 const noBtn    = document.getElementById("noBtn");
 const modal    = document.getElementById("modal");
@@ -113,3 +117,4 @@ container.addEventListener("pointermove", (e) => {
 /* Modal */
 yesBtn.addEventListener("click", () => modal.classList.add("show"));
 closeBtn.addEventListener("click", () => modal.classList.remove("show"));
+
